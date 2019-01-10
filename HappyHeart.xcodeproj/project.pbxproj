@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2579EB962042199A00DD9C4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EB952042199A00DD9C4A /* AppDelegate.m */; };
+		2579EB992042199A00DD9C4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EB982042199A00DD9C4A /* ViewController.m */; };
+		2579EB9C2042199A00DD9C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2579EB9A2042199A00DD9C4A /* Main.storyboard */; };
+		2579EB9E2042199A00DD9C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2579EB9D2042199A00DD9C4A /* Assets.xcassets */; };
+		2579EBA12042199A00DD9C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2579EB9F2042199A00DD9C4A /* LaunchScreen.storyboard */; };
+		2579EBA42042199A00DD9C4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EBA32042199A00DD9C4A /* main.m */; };
+		2579EBA82042199A00DD9C4A /* HappyHeart WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2579EBA72042199A00DD9C4A /* HappyHeart WatchKit App.app */; };
+		2579EBAE2042199A00DD9C4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2579EBAC2042199A00DD9C4A /* Interface.storyboard */; };
+		2579EBB02042199A00DD9C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2579EBAF2042199A00DD9C4A /* Assets.xcassets */; };
+		2579EBB72042199A00DD9C4A /* HappyHeart WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2579EBB62042199A00DD9C4A /* HappyHeart WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2579EBBD2042199A00DD9C4A /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EBBC2042199A00DD9C4A /* InterfaceController.m */; };
+		2579EBC02042199A00DD9C4A /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EBBF2042199A00DD9C4A /* ExtensionDelegate.m */; };
+		2579EBC32042199A00DD9C4A /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EBC22042199A00DD9C4A /* NotificationController.m */; };
+		2579EBC52042199A00DD9C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2579EBC42042199A00DD9C4A /* Assets.xcassets */; };
+		2579EBDC2042443F00DD9C4A /* hearticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2579EBDB2042443E00DD9C4A /* hearticon.png */; };
+		2579EBDF2043171000DD9C4A /* WatchGeneHeartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2579EBDE2043171000DD9C4A /* WatchGeneHeartScreen.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2579EBA92042199A00DD9C4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2579EB892042199A00DD9C4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2579EBA62042199A00DD9C4A;
+			remoteInfo = "HappyHeart WatchKit App";
+		};
+		2579EBB82042199A00DD9C4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2579EB892042199A00DD9C4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2579EBB52042199A00DD9C4A;
+			remoteInfo = "HappyHeart WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2579EBCD2042199A00DD9C4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2579EBB72042199A00DD9C4A /* HappyHeart WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2579EBD12042199A00DD9C4A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2579EBA82042199A00DD9C4A /* HappyHeart WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2579EB912042199A00DD9C4A /* HappyHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2579EB942042199A00DD9C4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2579EB952042199A00DD9C4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2579EB972042199A00DD9C4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2579EB982042199A00DD9C4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2579EB9B2042199A00DD9C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2579EB9D2042199A00DD9C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2579EBA02042199A00DD9C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2579EBA22042199A00DD9C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2579EBA32042199A00DD9C4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2579EBA72042199A00DD9C4A /* HappyHeart WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HappyHeart WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2579EBAD2042199A00DD9C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2579EBAF2042199A00DD9C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2579EBB12042199A00DD9C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2579EBB62042199A00DD9C4A /* HappyHeart WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HappyHeart WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2579EBBB2042199A00DD9C4A /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		2579EBBC2042199A00DD9C4A /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		2579EBBE2042199A00DD9C4A /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		2579EBBF2042199A00DD9C4A /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		2579EBC12042199A00DD9C4A /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		2579EBC22042199A00DD9C4A /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		2579EBC42042199A00DD9C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2579EBC62042199A00DD9C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2579EBC72042199A00DD9C4A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2579EBDB2042443E00DD9C4A /* hearticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearticon.png; sourceTree = "<group>"; };
+		2579EBDD2043171000DD9C4A /* WatchGeneHeartScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchGeneHeartScreen.h; sourceTree = "<group>"; };
+		2579EBDE2043171000DD9C4A /* WatchGeneHeartScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchGeneHeartScreen.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2579EB8E2042199A00DD9C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2579EBB32042199A00DD9C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2579EB882042199A00DD9C4A = {
+			isa = PBXGroup;
+			children = (
+				2579EB932042199A00DD9C4A /* HappyHeart */,
+				2579EBAB2042199A00DD9C4A /* HappyHeart WatchKit App */,
+				2579EBBA2042199A00DD9C4A /* HappyHeart WatchKit Extension */,
+				2579EB922042199A00DD9C4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2579EB922042199A00DD9C4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2579EB912042199A00DD9C4A /* HappyHeart.app */,
+				2579EBA72042199A00DD9C4A /* HappyHeart WatchKit App.app */,
+				2579EBB62042199A00DD9C4A /* HappyHeart WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2579EB932042199A00DD9C4A /* HappyHeart */ = {
+			isa = PBXGroup;
+			children = (
+				2579EB942042199A00DD9C4A /* AppDelegate.h */,
+				2579EB952042199A00DD9C4A /* AppDelegate.m */,
+				2579EB972042199A00DD9C4A /* ViewController.h */,
+				2579EB982042199A00DD9C4A /* ViewController.m */,
+				2579EB9A2042199A00DD9C4A /* Main.storyboard */,
+				2579EB9D2042199A00DD9C4A /* Assets.xcassets */,
+				2579EB9F2042199A00DD9C4A /* LaunchScreen.storyboard */,
+				2579EBA22042199A00DD9C4A /* Info.plist */,
+				2579EBA32042199A00DD9C4A /* main.m */,
+			);
+			path = HappyHeart;
+			sourceTree = "<group>";
+		};
+		2579EBAB2042199A00DD9C4A /* HappyHeart WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2579EBDB2042443E00DD9C4A /* hearticon.png */,
+				2579EBAC2042199A00DD9C4A /* Interface.storyboard */,
+				2579EBAF2042199A00DD9C4A /* Assets.xcassets */,
+				2579EBB12042199A00DD9C4A /* Info.plist */,
+			);
+			path = "HappyHeart WatchKit App";
+			sourceTree = "<group>";
+		};
+		2579EBBA2042199A00DD9C4A /* HappyHeart WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2579EBBB2042199A00DD9C4A /* InterfaceController.h */,
+				2579EBBC2042199A00DD9C4A /* InterfaceController.m */,
+				2579EBDD2043171000DD9C4A /* WatchGeneHeartScreen.h */,
+				2579EBDE2043171000DD9C4A /* WatchGeneHeartScreen.m */,
+				2579EBBE2042199A00DD9C4A /* ExtensionDelegate.h */,
+				2579EBBF2042199A00DD9C4A /* ExtensionDelegate.m */,
+				2579EBC12042199A00DD9C4A /* NotificationController.h */,
+				2579EBC22042199A00DD9C4A /* NotificationController.m */,
+				2579EBC42042199A00DD9C4A /* Assets.xcassets */,
+				2579EBC62042199A00DD9C4A /* Info.plist */,
+				2579EBC72042199A00DD9C4A /* PushNotificationPayload.apns */,
+			);
+			path = "HappyHeart WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2579EB902042199A00DD9C4A /* HappyHeart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2579EBD22042199A00DD9C4A /* Build configuration list for PBXNativeTarget "HappyHeart" */;
+			buildPhases = (
+				2579EB8D2042199A00DD9C4A /* Sources */,
+				2579EB8E2042199A00DD9C4A /* Frameworks */,
+				2579EB8F2042199A00DD9C4A /* Resources */,
+				2579EBD12042199A00DD9C4A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2579EBAA2042199A00DD9C4A /* PBXTargetDependency */,
+			);
+			name = HappyHeart;
+			productName = HappyHeart;
+			productReference = 2579EB912042199A00DD9C4A /* HappyHeart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2579EBA62042199A00DD9C4A /* HappyHeart WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2579EBCE2042199A00DD9C4A /* Build configuration list for PBXNativeTarget "HappyHeart WatchKit App" */;
+			buildPhases = (
+				2579EBA52042199A00DD9C4A /* Resources */,
+				2579EBCD2042199A00DD9C4A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2579EBB92042199A00DD9C4A /* PBXTargetDependency */,
+			);
+			name = "HappyHeart WatchKit App";
+			productName = "HappyHeart WatchKit App";
+			productReference = 2579EBA72042199A00DD9C4A /* HappyHeart WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2579EBB52042199A00DD9C4A /* HappyHeart WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2579EBCA2042199A00DD9C4A /* Build configuration list for PBXNativeTarget "HappyHeart WatchKit Extension" */;
+			buildPhases = (
+				2579EBB22042199A00DD9C4A /* Sources */,
+				2579EBB32042199A00DD9C4A /* Frameworks */,
+				2579EBB42042199A00DD9C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HappyHeart WatchKit Extension";
+			productName = "HappyHeart WatchKit Extension";
+			productReference = 2579EBB62042199A00DD9C4A /* HappyHeart WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2579EB892042199A00DD9C4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Northwell;
+				TargetAttributes = {
+					2579EB902042199A00DD9C4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2579EBA62042199A00DD9C4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2579EBB52042199A00DD9C4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2579EB8C2042199A00DD9C4A /* Build configuration list for PBXProject "HappyHeart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2579EB882042199A00DD9C4A;
+			productRefGroup = 2579EB922042199A00DD9C4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2579EB902042199A00DD9C4A /* HappyHeart */,
+				2579EBA62042199A00DD9C4A /* HappyHeart WatchKit App */,
+				2579EBB52042199A00DD9C4A /* HappyHeart WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2579EB8F2042199A00DD9C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2579EBA12042199A00DD9C4A /* LaunchScreen.storyboard in Resources */,
+				2579EB9E2042199A00DD9C4A /* Assets.xcassets in Resources */,
+				2579EB9C2042199A00DD9C4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2579EBA52042199A00DD9C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2579EBB02042199A00DD9C4A /* Assets.xcassets in Resources */,
+				2579EBDC2042443F00DD9C4A /* hearticon.png in Resources */,
+				2579EBAE2042199A00DD9C4A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2579EBB42042199A00DD9C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2579EBC52042199A00DD9C4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2579EB8D2042199A00DD9C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2579EB992042199A00DD9C4A /* ViewController.m in Sources */,
+				2579EBA42042199A00DD9C4A /* main.m in Sources */,
+				2579EB962042199A00DD9C4A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2579EBB22042199A00DD9C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2579EBC02042199A00DD9C4A /* ExtensionDelegate.m in Sources */,
+				2579EBBD2042199A00DD9C4A /* InterfaceController.m in Sources */,
+				2579EBC32042199A00DD9C4A /* NotificationController.m in Sources */,
+				2579EBDF2043171000DD9C4A /* WatchGeneHeartScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2579EBAA2042199A00DD9C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2579EBA62042199A00DD9C4A /* HappyHeart WatchKit App */;
+			targetProxy = 2579EBA92042199A00DD9C4A /* PBXContainerItemProxy */;
+		};
+		2579EBB92042199A00DD9C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2579EBB52042199A00DD9C4A /* HappyHeart WatchKit Extension */;
+			targetProxy = 2579EBB82042199A00DD9C4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2579EB9A2042199A00DD9C4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2579EB9B2042199A00DD9C4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2579EB9F2042199A00DD9C4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2579EBA02042199A00DD9C4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2579EBAC2042199A00DD9C4A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2579EBAD2042199A00DD9C4A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2579EBC82042199A00DD9C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2579EBC92042199A00DD9C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2579EBCB2042199A00DD9C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HappyHeart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northwell.HappyHeart.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		2579EBCC2042199A00DD9C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HappyHeart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northwell.HappyHeart.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		2579EBCF2042199A00DD9C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HappyHeart_WatchKit_Extension;
+				INFOPLIST_FILE = "HappyHeart WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northwell.HappyHeart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		2579EBD02042199A00DD9C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HappyHeart_WatchKit_Extension;
+				INFOPLIST_FILE = "HappyHeart WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northwell.HappyHeart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		2579EBD32042199A00DD9C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HappyHeart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northwell.HappyHeart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2579EBD42042199A00DD9C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HappyHeart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northwell.HappyHeart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2579EB8C2042199A00DD9C4A /* Build configuration list for PBXProject "HappyHeart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2579EBC82042199A00DD9C4A /* Debug */,
+				2579EBC92042199A00DD9C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2579EBCA2042199A00DD9C4A /* Build configuration list for PBXNativeTarget "HappyHeart WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2579EBCB2042199A00DD9C4A /* Debug */,
+				2579EBCC2042199A00DD9C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2579EBCE2042199A00DD9C4A /* Build configuration list for PBXNativeTarget "HappyHeart WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2579EBCF2042199A00DD9C4A /* Debug */,
+				2579EBD02042199A00DD9C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2579EBD22042199A00DD9C4A /* Build configuration list for PBXNativeTarget "HappyHeart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2579EBD32042199A00DD9C4A /* Debug */,
+				2579EBD42042199A00DD9C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2579EB892042199A00DD9C4A /* Project object */;
+}
